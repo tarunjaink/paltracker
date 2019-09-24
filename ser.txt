@@ -1,0 +1,23 @@
+Getting services in org DellEMC_PAL / space GOVIN_SANDBOX_SPACE as govindharaju.palani@emc.com...
+
+name                            service              plan           bound apps                                                                       last operation     broker
+album-database                  cleardb              spark                                                                                           create succeeded   appdirect
+albums-mysql                    cleardb              spark                                                                                           create succeeded   appdirect
+autoscale-GOVIN_SPACE           app-autoscaler       standard       empapp                                                                           create succeeded   app-autoscaler
+book_shelf_db                   cleardb              spark                                                                                           create succeeded   appdirect
+empdb                           cleardb              spark          empapp, projct-server                                                            create succeeded   appdirect
+movie-database                  cleardb              spark                                                                                           create succeeded   appdirect
+movie-fun-sso                   p-identity           dell-emc-pal                                                                                    create succeeded   identity-service-broker
+movies-mysql                    cleardb              spark                                                                                           create succeeded   appdirect
+paper-trail                     user-provided                                                                                                                           
+photo-storage                   user-provided                                                                                                                           
+rabbit                          cloudamqp            lemur                                                                                           create succeeded   appdirect
+tracker-allocations-database    cleardb              spark          tracker-allocations                                                              create succeeded   appdirect
+tracker-amqp                    cloudamqp            lemur                                                                                           create succeeded   appdirect
+tracker-backlog-database        cleardb              spark          tracker-backlog                                                                  create succeeded   appdirect
+tracker-database                cleardb              spark          pal-tracker, pal-tracker-prod, pal-tracker-review                                update succeeded   appdirect
+tracker-database-sql            p.mysql              db-small                                                                                        update succeeded   dedicated-mysql-broker
+tracker-registration-database   cleardb              spark          tracker-registration                                                             create succeeded   appdirect
+tracker-service-registry        p-service-registry   trial          tracker-allocations, tracker-backlog, tracker-registration, tracker-timesheets   create succeeded   p-spring-cloud-services
+tracker-sso                     p-identity           dell-emc-pal                                                                                    create succeeded   identity-service-broker
+tracker-timesheets-database     cleardb              spark          tracker-timesheets                                                               create succeeded   appdirect
